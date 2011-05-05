@@ -1,0 +1,20 @@
+!!! 5 
+html
+  head
+    title=title
+    script(src :'http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojo/dojo.xd.js', djConfig :'parseOnLoad: true')
+    script(type :'text/javascript')
+      dojo.require('dijit.layout.BorderContainer');
+      dojo.require('dijit.layout.TabContainer');
+      dojo.require('dijit.layout.AccordionContainer');
+      dojo.require('dijit.layout.ContentPane');
+    link(rel:'stylesheet', href:'http://ajax.googleapis.com/ajax/libs/dojo/1.6/dijit/themes/claro/claro.css')
+    script(type:'text/css')
+      html, body { width: 100%; height: 100%; margin: 0; }
+  body(class:'claro')
+    div(dojoType:'dijit.layout.ContentPane', region:'center', style:'height:200px;width:90%;margin:20px')
+      div(dojoType:'dijit.layout.TabContainer', style:'width:100%;height:90%', id:'tabContainer')
+        div(dojoType:'dijit.layout.ContentPane', title:'HackLab', selected:'true', id:'inicio')
+          h3 My HackLab!
+        div(dojoType:'dijit.layout.ContentPane', title:'Aboutme', selected:'true', id:'about')
+          h3 @jhonber
