@@ -11,10 +11,5 @@ html
     link(rel:'stylesheet', href:'http://ajax.googleapis.com/ajax/libs/dojo/1.6/dijit/themes/claro/claro.css')
     script(type:'text/css')
       html, body { width: 100%; height: 100%; margin: 0; }
-  body(class:'claro')
-    div(dojoType:'dijit.layout.ContentPane', region:'center', style:'height:200px;width:90%;margin:20px')
-      div(dojoType:'dijit.layout.TabContainer', style:'width:100%;height:90%', id:'tabContainer')
-        div(dojoType:'dijit.layout.ContentPane', title:'HackLab', selected:'true', id:'inicio')
-          h3 My HackLab!
-        div(dojoType:'dijit.layout.ContentPane', title:'Aboutme', selected:'true', id:'about')
-          h3 @jhonber
+  body(class='claro')!=body
+
